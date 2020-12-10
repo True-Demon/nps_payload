@@ -406,7 +406,7 @@ def main():
                99: quit,
     }
     try:
-      task = input("\nSelect a task: ")
+      task = int(input("\nSelect a task: "))
       options[task]()
     except KeyError:
       pass
